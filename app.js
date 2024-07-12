@@ -170,16 +170,6 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being 
 Solve Exercise 11 here:
 */
 
-// game.item.pokeball
-
-// let pokeballs = game.items[1]
-// game.catchPokemon = function(pokemonObj) {
-//   game.party.push(pokemonObj);
-//   pokeballs
- 
-//  }
-  
-
 let pokeball = game.items[1];
 let quantity = game.items[1].quantity[0];
 game.catchPokemon = function(pokemonObj) {
@@ -191,7 +181,7 @@ game.catchPokemon = function(pokemonObj) {
 }
  game.catchPokemon(pokemon[100])
 console.log(game.items)
-// console.log(game.party)
+console.log(game.party)
 
 /*
 Exercise 12
@@ -264,7 +254,14 @@ Solve Exercise 15 here:
 */
 
 
+for (let gym of game.gyms) {
 
+  if(gym.difficulty < 8) {
+    gym.completed = true
+  }
+ }
+
+// console.log(game.gyms)
 
 
 
@@ -276,3 +273,4 @@ Exercise 16
 Solve Exercise 16 here:
 */
 
+// console.log(game)
